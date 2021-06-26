@@ -15,6 +15,7 @@ hyperparameter. Some cleaners are English-specific. You'll typically want to use
 import re
 from unidecode import unidecode
 from .numbers import normalize_numbers
+from .vi_number_and_units import normalize_vi;
 
 
 # Regular expression matching whitespace:
@@ -88,3 +89,6 @@ def english_cleaners(text):
   text = expand_abbreviations(text)
   text = collapse_whitespace(text)
   return text
+
+def vietnamese_cleaners(text):
+    return normalize_vi(text)  
