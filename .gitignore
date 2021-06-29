@@ -2,4 +2,4 @@ __pycache__/
 /checkpoints/
 /output/
 nvlog.json
-trainning_data/
+training_data/
